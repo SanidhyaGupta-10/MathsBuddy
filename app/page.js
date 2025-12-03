@@ -17,6 +17,7 @@ export default function Home() {
               className="-mr-2"
             />
             <span className="text-blue-600 -ml-2">Maths</span>Buddy
+          <h3 className='text-[24px] -mb-5 italic ml-3'>by <span className="text-[28px] font-semibold">Void</span></h3>
           </h1>
         </div>
 

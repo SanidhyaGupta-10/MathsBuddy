@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import appStore from "@/app/images/app_store.png";
-import googlePlay from "@/app/images/google_play.png";
+ 
 
 const Card = () => {
     return (
