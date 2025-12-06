@@ -7,7 +7,7 @@ export default function Home() {
     <main className="flex flex-col items-center min-h-[90vh] w-full z-10 px-4">
       <div className="mt-5 flex flex-col items-center w-full max-w-5xl">
         <div className="flex flex-col items-center text-center">
-          <h1 className="flex items-center  text-black text-5xl md:text-6xl justify-center">
+          <h1 className="flex items-center text-black text-5xl md:text-6xl justify-center">
             <Image
               src={logo}
               alt="MathsBuddy logo"
@@ -17,7 +17,7 @@ export default function Home() {
               className="-mr-2"
             />
             <span className="text-blue-600 -ml-2">Maths</span>Buddy
-          <h3 className='text-[24px] -mb-5 italic ml-3'>by <span className="text-[28px] font-semibold">Void</span></h3>
+
           </h1>
         </div>
 

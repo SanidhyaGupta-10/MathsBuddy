@@ -1,6 +1,4 @@
 "use client";
-import React from "react";
- 
 
 const Card = () => {
     return (
@@ -49,8 +47,8 @@ const Card = () => {
                             <p>📱 The official MathBuddy apps for iOS and Android are currently in development and will be released shortly after the website launch.</p>
                         </div>
                         <div className="flex  sm:flex-row gap-6 items-center">
-                            <img src={appStore.src} alt="App Store" className="w-32 h-auto cursor-pointer" />
-                            <img src={googlePlay.src} alt="App Store" className="w-32 h-auto cursor-pointer" />
+                            {/* <img src={appStore.src} alt="App Store" className="w-32 h-auto cursor-pointer" /> */}
+                            {/* <img src={googlePlay.src} alt="App Store" className="w-32 h-auto cursor-pointer" /> */}
                         </div>
                     </div>
                 </div>
