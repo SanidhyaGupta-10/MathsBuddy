@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
               style={{ zIndex: -1 }}
             />
             <div className="relative z-10">{children}</div>
-          </div
+          </div>
         </SessionWrapper>
       </body>
     </html>
