@@ -16,7 +16,6 @@ export default function VoiceButton({ onTranscript }) {
     mediaRecorder.onstop = async () => {
       const audioBlob = new Blob(audioChunks, { type: "audio/webm" });
 
-      // send to backend for whisper transcription
       const formData = new FormData();
       formData.append("audio", audioBlob);
 
@@ -31,8 +30,6 @@ export default function VoiceButton({ onTranscript }) {
 
     mediaRecorder.start();
     setRecording(true);
-
-    // keep reference globally
     window._rec = mediaRecorder;
   };
 
@@ -50,6 +47,7 @@ export default function VoiceButton({ onTranscript }) {
       onMouseUp={stopRecording}
       onTouchStart={startRecording}
       onTouchEnd={stopRecording}
+      onTranscript={(text) => setInput(text)}
     >
       🎤
     </button>
