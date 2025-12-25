@@ -1,8 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import VoiceButton from "./VoiceButton";
-import CameraButton from "./CameraButton";
 
 export default function ChatBox() {
   const [input, setInput] = useState("");
@@ -142,10 +140,10 @@ export default function ChatBox() {
   );
 
   return (
-    <div className="flex flex-col lg:flex-row gap-4 w-full h-full">
+    <div className="flex flex-col lg:flex-row w-[80vw] h-full mt-4">
 
       {/* SIDEBAR: CHAT HISTORY */}
-      <div className="w-full lg:w-64 bg-white/70 rounded-2xl shadow-xl p-4 space-y-3 h-[300px] lg:h-[400px] overflow-y-auto">
+      <div className="w-full lg:w-64 ml-10 bg-white/70 rounded-2xl shadow-xl p-4 space-y-3 h-[300px] lg:h-[400px] overflow-y-auto">
         <button
           onClick={startNewChat}
           className="w-full bg-blue-600 text-white py-2 rounded-xl"
@@ -196,7 +194,7 @@ export default function ChatBox() {
       </div>
 
       {/* MAIN CHAT */}
-      <div className="flex-1 w-full max-w-3xl mx-auto rounded-3xl bg-white/70 backdrop-blur-xl shadow-2xl p-4 md:p-6">
+      <div className="flex-1 w-full max-w-3xl mx-auto ml-10 rounded-3xl bg-white/70 backdrop-blur-xl shadow-2xl p-4 md:p-6">
 
         {showPremiumPopup && <PremiumPopup />}
 
@@ -236,10 +234,6 @@ export default function ChatBox() {
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && sendMessage()}
           />
-
-          <CameraButton onImage={() => { }} />
-          <VoiceButton onTranscript={(text) => setInput(text)} />
-
           <button
             onClick={sendMessage}
             disabled={isSending}
@@ -249,7 +243,7 @@ export default function ChatBox() {
           </button>
         </div>
       </div>
-      <div className="hidden xl:flex flex-1 w-full max-w-3xl mx-auto rounded-xl bg-white/70 backdrop-blur-xl shadow-2xl p-6 flex-col gap-1.5">
+      <div className="ml-5 hidden xl:flex flex-1 rounded-xl bg-white/70 backdrop-blur-xl shadow-2xl p-8 flex-col gap-1.5">
         <h1 className="text-xl fond-bold mb-4">Tip: Want better answers? Ask like this →</h1>
         <p className="font-bold">1. Start with an H2-style</p>
         <p className="font-bold">2. Add small bullet points only when explaining details.</p>
