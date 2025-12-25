@@ -6,7 +6,6 @@ import mainBg from "./images/main_bg.jpg";
 import logo from "./images/logo.png";
 import SessionWrapper from "@/components/SessionWrapper";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -32,7 +31,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-
         <link rel="icon" href="/images/favicon.png" sizes="64x64" />
       </head>
       <body
@@ -43,9 +41,7 @@ export default function RootLayout({ children }) {
         }}
       >
         <SessionWrapper>
-
-
-          <Navbar />
+          <Navbar/>
           <div className="relative min-h-[90vh] w-full">
             <Image
               src={mainBg}
@@ -57,8 +53,7 @@ export default function RootLayout({ children }) {
               style={{ zIndex: -1 }}
             />
             <div className="relative z-10">{children}</div>
-          </div>
-          
+          </div
         </SessionWrapper>
       </body>
     </html>
