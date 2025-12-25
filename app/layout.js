@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 
 // Setting the favicon (website logo shown in browser tab) in metadata
 export const metadata = {
-  title: "Learn, Solve, Master – With MathsBuddy!",
-  description: "Your personal math solver app",
+  title: "Learn, Solve, Master - With MathsBuddy!",
+  description: "Your personal math solver",
   icons: {
     icon: [
       { rel: "icon", url: "/images/favicon.png", sizes: "64x64" }, // Larger favicon
