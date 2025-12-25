@@ -1,5 +1,14 @@
 "use client";
+import Footer from "@/components/Footer";
+import React from "react";
 
+const SocialIcon = ({ icon }) => {
+    return (
+        <i
+            className={`bi bi-${icon} text-xl hover:text-red-400 transition cursor-pointer`}
+        ></i>
+    );
+};
 const Card = () => {
     return (
         <>
@@ -41,15 +50,11 @@ const Card = () => {
                             MathBuddy isn’t just another tool —
                             it’s the partner in your learning journey. ✨📚</p>
                     </div>
-
                     <div className="px-4 my-6">
                         <div className="text-[20px] mb-3 bg-gray-300 rounded-md border">
                             <p>📱 The official MathBuddy apps for iOS and Android are currently in development and will be released shortly after the website launch.</p>
                         </div>
-                        <div className="flex  sm:flex-row gap-6 items-center">
-                            {/* <img src={appStore.src} alt="App Store" className="w-32 h-auto cursor-pointer" /> */}
-                            {/* <img src={googlePlay.src} alt="App Store" className="w-32 h-auto cursor-pointer" /> */}
-                        </div>
+                        <div className="flex  sm:flex-row gap-6 items-center"></div>
                     </div>
                 </div>
             </div>
@@ -57,14 +62,4 @@ const Card = () => {
         </>
     );
 };
-
-const SocialIcon = ({ icon }) => {
-    return (
-        <i
-            className={`bi bi-${icon} text-xl hover:text-red-400 transition cursor-pointer`}
-        ></i>
-    );
-};
-
-// Custom Tailwind clip-path class
 export default Card;
