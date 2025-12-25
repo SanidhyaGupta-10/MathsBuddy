@@ -2,6 +2,9 @@
 import React from "react";
 import Lenis from "lenis";
 import { useEffect } from "react";
+import Footer from "@/components/Footer";
+
+
 
 const Card = () => {
     
@@ -21,6 +24,7 @@ const Card = () => {
         }, []);
 
     return (
+       <>
         <section id="terms-of-service" className="max-w-4xl mx-auto px-4 md:px-6 py-12">
             <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Terms of Service — MathBuddy</h1>
             <p className="text-gray-600 mb-8 text-lg md:text-xl">
@@ -88,6 +92,9 @@ const Card = () => {
             </div>
             </div>
         </section>
+
+        <Footer className='mt-10' />
+       </>
     );
 };
 

@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import Image from "next/image";
 import mainBg from "./images/main_bg.jpg";
 import logo from "./images/logo.png";
@@ -59,7 +58,7 @@ export default function RootLayout({ children }) {
             />
             <div className="relative z-10">{children}</div>
           </div>
-          <Footer className='' />
+          
         </SessionWrapper>
       </body>
     </html>

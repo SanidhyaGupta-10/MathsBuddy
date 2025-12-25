@@ -1,5 +1,7 @@
 "use client";
 
+import Footer from "@/components/Footer";
+
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import Lenis from "@studio-freight/lenis";
@@ -33,6 +35,7 @@ const Practice = () => {
   }, []);
 
   return (
+   <>
     <div className="relative min-h-screen text-black">
       <div
         ref={containerRef}
@@ -95,6 +98,9 @@ const Practice = () => {
         </div>
       </div>
     </div>
+
+    <Footer className='mt-10' />
+   </>
   );
 };
 

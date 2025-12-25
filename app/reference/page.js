@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Lenis from "@studio-freight/lenis";
+import Footer from '@/components/Footer'
 
 const Reference = () => {
   const containerRef = useRef(null);
@@ -32,9 +33,10 @@ const Reference = () => {
   }, []);
 
   return (
+    <>
     <div
-      ref={containerRef}
-      className="z-10 relative text-black p-4 md:p-8 min-h-[80vh] w-full md:w-[90vw] lg:w-[80vw] flex flex-col mx-auto container"
+    ref={containerRef}
+    className="z-10 relative text-black p-4 md:p-8 min-h-[80vh] w-full md:w-[90vw] lg:w-[80vw] flex flex-col mx-auto container"
     >
       <h1 className="text-3xl md:text-4xl font-bold mb-4 ">
         <span
@@ -180,6 +182,8 @@ const Reference = () => {
 
       </div>
     </div>
+    <Footer className='mt-10' />
+            </>
   );
 };
 

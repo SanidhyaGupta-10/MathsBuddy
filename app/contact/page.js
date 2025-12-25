@@ -1,8 +1,12 @@
 "use client";
 import React from "react";
+import Footer from "@/components/Footer";
+
 
 const Contact = () => {
   return (
+<>
+
     <div className="p-8 mx-auto max-w-lg text-center rounded-lg">
       <h1 className="text-3xl font-bold mt-5">Contact Us</h1>
 
@@ -44,6 +48,9 @@ const Contact = () => {
         </a>
       </div>
     </div>
+
+    <Footer className='mt-10' />
+    </>
   );
 };
 

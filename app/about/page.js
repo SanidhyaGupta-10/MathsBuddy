@@ -53,6 +53,7 @@ const Card = () => {
                     </div>
                 </div>
             </div>
+            <Footer className='mt-10' />
         </>
     );
 };
