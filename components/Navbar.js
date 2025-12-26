@@ -5,10 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "../app/images/logo.png";
 
-
-
 const Navbar = () => {
-  const { data: session } = useSession();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -47,29 +44,7 @@ const Navbar = () => {
 
         {/* User Section */}
         <ul className="flex items-center gap-5 mr-8">
-          {!session ? (
-            <>
-              <li className="text-[17px] text-blue-600">
-                <Link href="/login">Login</Link>
-              </li>
-             
-            </>
-          ) : (
-            <>
-              <li className="text-[17px] text-blue-600">
-                Welcome, {session?.user?.email.split("@")[0]}
-              </li>
-              <li>
-                <button
-                  onClick={() => signOut({ callbackUrl: "/" })}
-                  className="bg-red-500 text-white px-4 py-2 rounded-xl hover:bg-red-600 transition"
-                >
-                  Logout
-                </button>
-              </li>
-            </>
-          )}
-
+         
            <li>
                 <Link
                   href="/pricing"

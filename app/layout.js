@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import mainBg from "./images/main_bg.jpg";
 import logo from "./images/logo.png";
-import SessionWrapper from "@/components/SessionWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,7 +39,6 @@ export default function RootLayout({ children }) {
           position: "relative"
         }}
       >
-        <SessionWrapper>
           <Navbar/>
           <div className="relative min-h-[90vh] w-full">
             <Image
@@ -54,7 +52,6 @@ export default function RootLayout({ children }) {
             />
             <div className="relative z-10">{children}</div>
           </div>
-        </SessionWrapper>
       </body>
     </html>
   );
