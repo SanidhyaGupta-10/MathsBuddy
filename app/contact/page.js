@@ -9,7 +9,7 @@ const Contact = () => {
     <div className="p-8 mx-auto max-w-lg text-center rounded-lg">
       <h1 className="text-3xl font-bold mt-5">Contact Us</h1>
 
-      <div className="flex flex-col mt-5 justify-center items-center gap-3">
+      <div className="flex flex-col mt-5 justify-center items-center gap-3 mb-60">
 
         {/* Instagram */}
         <button
@@ -48,7 +48,7 @@ const Contact = () => {
       </div>
     </div>
 
-    <Footer className='mt-10' />
+    <Footer/>
     </>
   );
 };
