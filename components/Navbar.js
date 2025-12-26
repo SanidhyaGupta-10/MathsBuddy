@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../app/images/logo.png";
-import { signIn, signOut, useSession } from "next-auth/react";
+
 
 
 const Navbar = () => {
@@ -94,29 +94,6 @@ const Navbar = () => {
             <Link href="/" onClick={() => setMenuOpen(false)}>
               Try Now
             </Link>
-
-            {!session ? (
-              <>
-                <Link href="/login" onClick={() => setMenuOpen(false)}>
-                  Login
-                </Link>
-               
-              </>
-            ) : (
-              <>
-              <li className="text-[17px] text-blue-600">Welcome, {session?.user?.email.split("@")[0]}</li>
-              <button
-                onClick={() => {
-                  setMenuOpen(false);
-                  signOut({ callbackUrl: "/" });
-                }}
-                className="text-red-500"
-              >
-                Logout
-              </button>
-              </>
-            )}
-
             <Link href="/pricing" onClick={() => setMenuOpen(false)}>
                   Premium
                 </Link>
