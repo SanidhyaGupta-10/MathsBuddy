@@ -1,6 +1,5 @@
 "use client";
 import Footer from "@/components/Footer";
-import React from "react";
 
 const SocialIcon = ({ icon }) => {
     return (

@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import Lenis from "lenis";
 import { useEffect } from "react";
 import Footer from "@/components/Footer";
